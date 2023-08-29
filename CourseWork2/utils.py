@@ -24,6 +24,12 @@ def load_random_word(url):
 
 
 def hello(player, random_word):
+    """
+    Выводи приветствие игроку.
+    :param player: Имя игрока.
+    :param random_word: Загружаемые данные из функции.
+    :return: None.
+    """
     print(f"Привет, {player.name}!\n") # Приветствуем игрока
     print(f"Составьте {len(random_word.subwords)} слов из слова {random_word.word.upper()}.")
     print("Слова должны быть не короче 3 букв.")
@@ -34,7 +40,12 @@ def hello(player, random_word):
 
 
 def game(random_word, player):
-    # Бесконечный цикл для ввода слов игроком
+    """
+    Выводит вопросы игроку и результат игры.
+    :param player: Имя игрока.
+    :param random_word: Загружаемые данные из функции.
+    :return: None.
+    """
     while True:
         word = input().lower()
 
