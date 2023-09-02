@@ -23,7 +23,7 @@ def load_random_word(url):
         return instance
 
 
-def hello(player, random_word):
+def hello_player(player, random_word):
     """
     Выводи приветствие игроку.
     :param player: Имя игрока.
@@ -39,7 +39,7 @@ def hello(player, random_word):
 
 
 
-def game(random_word, player):
+def start_game(random_word, player):
     """
     Выводит вопросы игроку и результат игры.
     :param player: Имя игрока.
