@@ -77,12 +77,3 @@ def build_stats(questions):
             f"Отвечено {count} вопроса из {len(questions)}.\n" \
             f"Набрано баллов: {points}"
 
-def main():
-    """
-    Основная программа.
-    :return: None
-    """
-    file = "question.json"
-    questions = get_question(file)
-    get_quest(questions)
-    print(build_stats(questions))
