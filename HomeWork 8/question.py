@@ -8,6 +8,7 @@ class Question:
         self.user_answer = user_answer
         self.points = self.complication * 10
 
+
     def get_points(self):
         """
         Возвращает int, количество баллов.
